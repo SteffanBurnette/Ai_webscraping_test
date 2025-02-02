@@ -5,12 +5,13 @@ import json
 llm = ChatOllama(model="deepseek-r1:1.5b", temperature = 0)
 llm_json_mode = ChatOllama(model="deepseek-r1:1.5b", temperature = 0, format = "json")
 
+#Creates an instance of the web crawler
+crawler = WebCrawler() 
 
-crawler = WebCrawler() #Creates an instance of the web crawler
+#Warms up the crawler by loading the necessary models
+crawler.warmup() 
 
-crawler.warmup() #Warms up the crawler by loading the necessary models
-
-#Will webscrape the facebook tos
+#Will webscrape the facebook tos:
 result = crawler.run(url = "https://tosdr.org/en/service/182") 
 
 #print(result.markdown) #Prints the extracted content
