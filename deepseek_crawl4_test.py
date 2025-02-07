@@ -8,7 +8,7 @@ llm_json_mode = ChatOllama(model="deepseek-r1:1.5b", temperature = 0, format = "
 #Creates an instance of the web crawler
 crawler = WebCrawler() 
 
-#Warms up the crawler by loading the necessary modelss
+#Warms up the crawler by loading the necessary model
 crawler.warmup() 
 
 #Will webscrape the facebook tos:
