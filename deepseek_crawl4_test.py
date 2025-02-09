@@ -11,7 +11,7 @@ crawler = WebCrawler()
 #Warms up the crawler by loading the necessary model
 crawler.warmup() 
 
-#Will webscrape the facebook tos:
+#Will webscrape the facebook tos on tosdr:
 result = crawler.run(url = "https://tosdr.org/en/service/182") 
 
 #print(result.markdown) #Prints the extracted content
