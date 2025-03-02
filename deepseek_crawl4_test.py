@@ -23,7 +23,7 @@ print(msg.content)
 
 #The Response after looking at facebooks ToS
 '''
-<think>
+<think>    
 Okay, so I'm trying to understand this document about Facebook's privacy policy. It looks like it's a pretty detailed document that covers various aspects of how Facebook handles user data and personal 
 information. Let me go through each section one by one to get a better grasp.
 
