@@ -1,6 +1,6 @@
 '''
 ollama run deepseek-r1:1.5b
-
+:P
 website:  https://ollama.com/library/deepseek-r1:1.5b
 '''
 #Allows me to interact with the deepseek model
