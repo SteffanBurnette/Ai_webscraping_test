@@ -10,8 +10,11 @@ def detectAndDisplay(frame):
  
     #-- Detect faces
     faces = face_cascade.detectMultiScale(frame_gray)
+    y_coord = 0
+    y_coord += 50
     for (x,y,w,h) in faces:
         center = (x + w//2, y + h//2)
+        cv.putText(frame, f'X: {center[0]} Y: {center[1]}', (50, y_coord), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
         frame = cv.ellipse(frame, center, (w//2, h//2), 0, 0, 360, (255, 0, 255), 4)
  
         faceROI = frame_gray[y:y+h,x:x+w]
