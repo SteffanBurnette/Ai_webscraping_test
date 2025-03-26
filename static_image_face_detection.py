@@ -1,6 +1,6 @@
 import cv2 as cv
 
-#Insert the correct image path to be analyzed by the face detection filter
+#Insert the correct image path to be analyzed by the face detection filters
 picture = "Image/PATH"
 
 img = cv.imread(picture)
